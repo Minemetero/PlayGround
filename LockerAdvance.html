@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Unveil Mr.C's Ultimate Secret - Expert Mode!</title>
+    <title>Unveil Mr.C's Ultimate Secret</title>
     <style>
         /* Hidden encoded message in CSS comment */
         /* LyogUGFydDE6IEZMQUd7SV9BTV9fICov */
@@ -51,9 +51,9 @@
 </head>
 <body>
     <h1>Welcome to the Ultimate Locker Challenge!</h1>
-    <p>This time, only the best can find the secret code. You’ll need to combine deep investigation, cryptography skills, and more!</p>
+    <p>This time, only the best can find the secret code. I know you are curious about Mr.C</p>
     <div class="locker">🔒</div>
-    <p>The locker is locked again. Can you uncover Mr.C's ultimate secret flag?</p>
+    <p>The locker is locked again. Can you hack the locker?</p>
 
     <div class="step">
         <h2>Step 1: Investigate Deeply</h2>
@@ -68,19 +68,19 @@
             <input type="text" id="riddleInput" placeholder="Enter your answer">
             <button onclick="checkRiddleAnswer()">Submit</button>
         </div>
-        <p id="riddleClue" class="hidden"></p> <!-- This will show the encoded clue after solving the riddle -->
+        <p id="riddleClue" class="hidden"></p> 
     </div>
 
     <div class="step">
         <h2>Step 3: Decode the Cipher</h2>
         <p>To get the final part of the flag, decrypt this message encrypted with a Vigenère cipher:</p>
         <p><code>GIEWIV GMTLIV HIQS</code></p>
-        <p>Hint: <code>VGhlIGtleSBpcyBhIGNvbW1vbiBncmVldGluZy4=</code></p> <!-- Encoded hint for the key -->
+        <p>Hint: <code>VGhlIGtleSBpcyBhIGNvbW1vbiBncmVldGluZy4=</code></p> 
         <div class="input-section">
             <input type="text" id="cipherInput" placeholder="Enter the decrypted message">
             <button onclick="checkCipherAnswer()">Submit</button>
         </div>
-        <p id="cipherClue" class="hidden"></p> <!-- This will show the encoded final part after solving the cipher -->
+        <p id="cipherClue" class="hidden"></p> 
     </div>
 
     <div class="step">
@@ -106,7 +106,7 @@
             return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
         }
 
-        // Pre-hashed correct flag (hashed value of 'FLAG{ADVANCED_CHALLENGE_IS_FUN}')
+        // Pre-hashed correct flag
         const correctFlagHash = 'b1fc7cae5c24f2625866f490e53b17f4e4ddb30c33d6422ff650dce5a8345253';
 
         async function checkFlag() {
@@ -117,14 +117,14 @@
                 document.querySelector('.locker').textContent = '🔓';
                 alert("Congratulations! You've unlocked the locker. Mr.C's ultimate secret is: Knowledge is power!");
             } else {
-                alert("Incorrect flag! Keep searching and assembling!");
+                alert("Incorrect flag! Keep trying!");
             }
         }
 
         function checkRiddleAnswer() {
             const answer = document.getElementById('riddleInput').value.toLowerCase();
-            if (answer === 'echo') {
-                const riddleClueEncoded = 'UGFydCBvZiB0aGUgZmxhZyBpczogVEhFX09OTFlf'; // Encoded clue
+            if (answer === 'echo') {//I know you don't know the answer to this riddle because I don't know this riddle either
+                const riddleClueEncoded = 'UGFydCBvZiB0aGUgZmxhZyBpczogVEhFX09OTFlf'; 
                 document.getElementById('riddleClue').textContent = atob(riddleClueEncoded);
                 document.getElementById('riddleClue').classList.remove('hidden');
             } else {
@@ -134,9 +134,9 @@
 
         function checkCipherAnswer() {
             const answer = document.getElementById('cipherInput').value.toUpperCase();
-            const encodedCorrectAnswer = 'VEhFUkUgSVMgTk8gU0VDUkVU'; // Base64 encoded "THERE IS NO SECRET"
+            const encodedCorrectAnswer = 'VEhFUkUgSVMgTk8gU0VDUkVU'; 
             if (answer === atob(encodedCorrectAnswer)) {
-                const cipherClueEncoded = 'U0lOR0xFX0dFTklVUw=='; // Encoded final part
+                const cipherClueEncoded = 'U0lOR0xFX0dFTklVUw=='; 
                 document.getElementById('cipherClue').textContent = atob(cipherClueEncoded);
                 document.getElementById('cipherClue').classList.remove('hidden');
             } else {
