@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Secret Of Mr.C!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+        .locker {
+            font-size: 100px;
+            margin: 30px 0;
+        }
+        .step {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: #fffbe6;
+        }
+        .hidden {
+            display: none;
+        }
+        .hint {
+            font-size: 18px;
+            margin-top: 20px;
+            color: green;
+        }
+        .input-section {
+            margin-top: 30px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 18px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Secret Locker Challenge!</h1>
+    <p>Your goal: Find the secret code hidden somewhere on this page to unlock the virtual locker!</p>
+    <div class="locker">🔒</div>
+    <p>The locker is locked! Can you find the code to unlock it?</p>
+
+    <div class="step">
+        <h2>Step 1: Investigate the page</h2>
+        <p>Right-click anywhere on this page and choose <strong>"Inspect"</strong>, or press <strong>F12</strong> to open Developer Tools. Use the <strong>Elements</strong> tab to investigate the code.</p>
+    </div>
+
+    <div class="step">
+        <h2>Step 2: Look for clues</h2>
+        <p>The code to unlock the locker is hidden within the HTML. Explore the page elements carefully. It might not be easy to spot, but if you look closely, you'll find parts of the code scattered around.</p>
+    </div>
+
+    <div class="step">
+        <h2>Step 3: Input the secret code</h2>
+        <p>Once you’ve found the code, enter it below to unlock the locker:</p>
+        <div class="input-section">
+            <input type="text" id="flagInput" placeholder="Enter the code">
+            <button onclick="checkFlag()">Submit</button>
+        </div>
+    </div>
+
+    <p class="hidden">The code is hidden in secret locations around the page. Keep searching!</p>
+
+    <footer>
+        <p>Good luck! Can you unlock the locker and find the hidden message?</p>
+    </footer>
+
+    <script>
+        function checkFlag() {
+            const enteredFlag = document.getElementById('flagInput').value.toUpperCase();
+            const correctFlag = 'OBVIOUSLY';
+    
+            if (enteredFlag === correctFlag) {
+                document.querySelector('.locker').textContent = '🔓';
+                alert("Don't be happy to early. Mr.C's secret is always safe!");
+                // Redirect to the harder game
+                window.location.href = 'LockerAdvance.html';
+            } else {
+                alert("Flag is obviously!");
+            }
+        }
+    </script>    
+</body>
+</html>
