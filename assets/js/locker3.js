@@ -1,3 +1,4 @@
+"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -34,9 +35,12 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var _this = this;
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var flag = "020dd3dc162a25483a5648c8ea007dc379ed5cb922f5cc7e4d2c48b3b69cc354"; // this cannot be decoded hahahahahhahahahahahahhahahhaahahaha
-var hashData = function (data) { return __awaiter(_this, void 0, void 0, function () {
+var valueOf2;
+
+var hashData = function (data) { return __awaiter(void 0, void 0, void 0, function () {
     var encodedData, hashBuffer;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -49,5 +53,33 @@ var hashData = function (data) { return __awaiter(_this, void 0, void 0, functio
         }
     });
 }); };
-console.log(flag);
-hashData("THERE_IS_ALWAYS_A_PATH_TO_SUCCESS").then(function (hash) { return console.log(hash); });
+
+var checkTrue = function () { return __awaiter(void 0, void 0, void 0, function () {
+    var valueOf, _a;
+    return __generator(this, function (_b) {
+        switch (_b.label) {
+            case 0:
+                valueOf = document.getElementById("password");
+                valueOf2 = (valueOf === null || valueOf === void 0 ? void 0 : valueOf.value) || null;
+                if (valueOf == null) {
+                    return [2 /*return*/];
+                }
+                ;
+                _a = flag;
+                return [4 /*yield*/, hashData(valueOf2)];
+            case 1:
+                if (_a === (_b.sent())) {
+                    alert("Password is correct");
+                    return [2 /*return*/, true];
+                }
+                else {
+                    alert("Password is incorrect");
+                    return [2 /*return*/, false];
+                }
+                ;
+                return [2 /*return*/];
+        }
+    });
+}); };
+checkTrue("");
+// look into the images closely, there may be something hidden in them :)
