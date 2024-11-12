@@ -4,47 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the Secret Of Mr.C!</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f0f8ff;
-        }
-        .locker {
-            font-size: 100px;
-            margin: 30px 0;
-        }
-        .step {
-            margin: 20px 0;
-            padding: 20px;
-            border: 2px solid #000;
-            border-radius: 10px;
-            background-color: #fffbe6;
-        }
-        .hidden {
-            display: none;
-        }
-        .hint {
-            font-size: 18px;
-            margin-top: 20px;
-            color: green;
-        }
-        .input-section {
-            margin-top: 30px;
-        }
-        input[type="text"] {
-            padding: 10px;
-            font-size: 18px;
-            width: 200px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 18px;
-            margin-left: 10px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 </head>
 <body>
     <h1>Welcome to the Secret Locker Challenge!</h1>
@@ -77,20 +37,6 @@
         <p>Good luck! Can you unlock the locker and find the hidden message?</p>
     </footer>
 
-    <script>
-        function checkFlag() {
-            const enteredFlag = document.getElementById('flagInput').value.toUpperCase();
-            const correctFlag = 'OBVIOUSLY';
-    
-            if (enteredFlag === correctFlag) {
-                document.querySelector('.locker').textContent = '🔓';
-                alert("Don't be happy to early. Mr.C's secret is always safe!");
-                // Redirect to the harder game
-                window.location.href = 'LockerAdvance.html';
-            } else {
-                alert("Flag is obviously!");
-            }
-        }
-    </script>    
+    <script defer src="./assets/js/script.js"></script>
 </body>
 </html>
