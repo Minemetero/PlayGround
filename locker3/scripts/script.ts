@@ -12,5 +12,3 @@ const checkTrue = (data : string) => {
 console.log(flag);
 
 // look into the images closely, there may be something hidden in them :)
-
-// hashData("THERE_IS_ALWAYS_A_PATH_TO_SUCCESS").then(hash => console.log(hash));
