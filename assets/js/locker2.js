@@ -18,6 +18,8 @@
             if (hashedEnteredFlag === correctFlagHash) {
                 document.querySelector('.locker').textContent = '🔓';
                 alert(atob(successMessage));
+                // Redirect to the harder game
+                window.location.href = 'locker3.html';
             } else {
                 alert("Incorrect flag! Keep trying!");
             }
