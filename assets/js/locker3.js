@@ -50,4 +50,3 @@ var hashData = function (data) { return __awaiter(_this, void 0, void 0, functio
     });
 }); };
 console.log(flag);
-hashData("THERE_IS_ALWAYS_A_PATH_TO_SUCCESS").then(function (hash) { return console.log(hash); });
