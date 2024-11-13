@@ -36,7 +36,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 
-Object.defineProperty(exports, "__esModule", { value: true });
 var flag = "020dd3dc162a25483a5648c8ea007dc379ed5cb922f5cc7e4d2c48b3b69cc354"; // this cannot be decoded hahahahahhahahahahahahhahahhaahahaha
 var valueOf2;
 
@@ -66,20 +65,16 @@ var checkTrue = function () { return __awaiter(void 0, void 0, void 0, function 
                 }
                 ;
                 _a = flag;
-                return [4 /*yield*/, hashData(valueOf2)];
+                return [4 /*yield*/, hashData(valueOf2 === null || valueOf2 === void 0 ? void 0 : valueOf2.toUpperCase())];
             case 1:
                 if (_a === (_b.sent())) {
                     alert("Password is correct");
-                    return [2 /*return*/, true];
+                    window.location.replace('https://burdenowl.github.io/playground2/');
+                    return [2 /*return*/];
                 }
-                else {
-                    alert("Password is incorrect");
-                    return [2 /*return*/, false];
-                }
-                ;
+                alert("Password is incorrect");
                 return [2 /*return*/];
         }
     });
 }); };
-checkTrue("");
 // look into the images closely, there may be something hidden in them :)
