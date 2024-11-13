@@ -17,7 +17,7 @@ const checkTrue = async () : Promise<void> => {
 
     if (flag === await hashData(valueOf2?.toUpperCase())) {
         alert("Password is correct");
-        window.location.replace('https://burdenowl.github.io/playground2/');
+        window.location.replace('https://tinyurl.com/3sykfcnt');
         return;
     };
     alert("Password is incorrect");
