@@ -69,7 +69,7 @@ var checkTrue = function () { return __awaiter(void 0, void 0, void 0, function 
             case 1:
                 if (_a === (_b.sent())) {
                     alert("Password is correct");
-                    window.location.replace('https://burdenowl.github.io/playground2/');
+                    window.location.replace('https://tinyurl.com/3sykfcnt');
                     return [2 /*return*/];
                 }
                 alert("Password is incorrect");
@@ -78,3 +78,4 @@ var checkTrue = function () { return __awaiter(void 0, void 0, void 0, function 
     });
 }); };
 // look into the images closely, there may be something hidden in them :)
+console.log(flag);
