@@ -1,49 +1,108 @@
 /* Z28gYmFjayB0byB0aGUgYmVnaW5uaW5nIGZvciBhIGtleSA6KSkpKSkp */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin: 0;
+  min-height: 100vh;
 }
 
 #mainbox {
-  background-color: #cccccc;
-  height: 400px;
-  width: 300px;
-  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  height: 450px;
+  width: 340px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+#logintext {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+#imgContainer {
+  background-color: #f5f6fa;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+  width: 85%;
+  padding: 10px;
+  margin: 20px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#text {
+  font-size: 14px;
+  color: #555;
+  margin-left: 10px;
+}
+
+#pfp {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+s-text-field {
+  margin: 20px 0;
+  width: 85% !important;
+}
+
+input[type="password"] {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="password"]:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+s-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+s-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .flex2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: 10px 0;
+  width: 100%;
 }
 
 .flex3 {
   display: flex;
   align-items: center;
-  align-self: center;
-}
-
-#imgContainer {
-  background-color: #eaeaea;
-  outline-color: #c8c8c8;
-  border-radius: 20px;
-  width: 80%;
-  font-size: 12px;
-}
-
-#pfp {
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  object-fit: contain;
-  margin: 5px 5px 5px 5px;
+  justify-content: flex-start;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

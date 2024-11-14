@@ -12,29 +12,29 @@
 </head>
 
 <body>
-    <s-page>
-        <!-- look at the files closer -->
-        <div class="flex">
-            <div id="mainbox">
-                <div class="flex2">
-                    <h2 id="logintext">Login</h2>
-                </div>
-                <div id="imgContainer" class="flex3">
-                    <img src="./assets/images/message.png" alt="" id="pfp">
-                    <p id="text">Login in as Mr. C</p>
-                </div>
-                <div class="flex2">
-                    <s-text-field style="display: grid; width: auto" label="Enter Password">
-                        <input type="password" placeholder="Enter Password" id="password">
-                        <img src=".//images/3.jpg" style="display: none;">
-                    </s-text-field>
-                </div>
-                <div class="flex2">
-                    <s-button id="enter" onclick="checkTrue();">Login in</s-button>
-                </div>
+
+    <!-- look at the files closer -->
+    <div class="flex">
+        <div id="mainbox">
+            <div class="flex2">
+                <h2 id="logintext">Login</h2>
+            </div>
+            <div id="imgContainer" class="flex3">
+                <img src="./assets/images/message.png" alt="" id="pfp">
+                <p id="text">Login as Mr.C</p>
+            </div>
+            <div class="flex2">
+                <s-text-field style="display: grid; width: auto" label="Enter Password">
+                    <input type="password" placeholder="Enter Password" id="password">
+                    <img src="./assets/images/3.jpg" style="display: none;">
+                </s-text-field>
+            </div>
+            <div class="flex2">
+                <s-button id="enter" onclick="checkTrue();">Login</s-button>
             </div>
         </div>
-    </s-page>
+    </div>
+
     <img src="./assets/images/qr.png" alt="qr" style="display: none;">
     <script src="https://unpkg.com/sober@0.6.7/dist/sober.min.js"></script>
     <script src="./assets/js/locker3.js"></script>
