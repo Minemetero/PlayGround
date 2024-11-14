@@ -7,5 +7,7 @@ function checkFlag() {
         alert("Don't be happy to early. Mr.C's secret is always safe!");
         // Redirect to the harder game
         window.location.href = 'locker2.html';
+    } else {
+        alert("Incorrect flag! Keep trying!");
     }
 }

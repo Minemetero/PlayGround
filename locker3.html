@@ -12,27 +12,32 @@
 </head>
 
 <body>
-    <!-- look at the files closer -->
-    <div class="flex">
-        <div id="mainbox">
-            <div class="flex2">
-                <h2 id="logintext">Login</h2>
-            </div>
-            <div id="imgContainer" class="flex3">
-                <img src="assets/images/message.png" alt="" id="pfp">
-                <p id="text">Login in as Mr. C</p>
-            </div>
-            <div class="flex2">
-                <input type="password" placeholder="Enter Password" id="password">
-                <img src="assets/images/3.jpg" style="display: none;">
-            </div>
-            <div class="flex2">
-                <button id="enter" onclick="checkTrue();">Login in</button>
+    <s-page>
+        <!-- look at the files closer -->
+        <div class="flex">
+            <div id="mainbox">
+                <div class="flex2">
+                    <h2 id="logintext">Login</h2>
+                </div>
+                <div id="imgContainer" class="flex3">
+                    <img src="./assets/images/message.png" alt="" id="pfp">
+                    <p id="text">Login in as Mr. C</p>
+                </div>
+                <div class="flex2">
+                    <s-text-field style="display: grid; width: auto" label="Enter Password">
+                        <input type="password" placeholder="Enter Password" id="password">
+                        <img src=".//images/3.jpg" style="display: none;">
+                    </s-text-field>
+                </div>
+                <div class="flex2">
+                    <s-button id="enter" onclick="checkTrue();">Login in</s-button>
+                </div>
             </div>
         </div>
-    </div>
-    <img src="assets/images/qr.png" alt="qr" style="display: none;">
-    <script src="assets/js/locker3.js"></script>
+    </s-page>
+    <img src="./assets/images/qr.png" alt="qr" style="display: none;">
+    <script src="https://unpkg.com/sober@0.6.7/dist/sober.min.js"></script>
+    <script src="./assets/js/locker3.js"></script>
     <script>
         const arr = "63 6y 6s 73 74 20 61 72 72 20 3f 20 5f 22 41 3z 41 22 2r 20 60 42 3m 25 60 2n 20 60 43 3y 71 60 2t 20 60 44 3v 5h 60 2r 20 60 45 3y 23 60 2m 20 60 46 3o 34 60 2i 20 60 47 3n 72 60 2p 20 60 48 3y 42 60 2b 20 60 49 3w 39 60 2i 20 60 4m 3l 3c 60 2h 20 60 4t 3l 44 60 2k 20 60 4i 3j 26 60 2o 20 60 4l 3k 37 60 2t 20 60 4q 3c 45 60 2b 20 60 4n 3l 46 60 2m 20 60 50 3z 40 60 2p 20 60 51 3d 48 60 2o 20 60 52 3y 21 60 2c 20 60 53 3z 31 60 2o 20 60 54 3b 4e 60 2h 20 60 55 3k 4q 60 2n 20 60 56 3y 33 60 2h 20 60 57 3j 55 60 2e 20 60 58 3j 50 60 2r 20 60 59 3y 29 60 2x 20 60 5i 3p 2n 60 5y";
     </script>

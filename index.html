@@ -16,28 +16,28 @@
     <p>The locker is locked! Can you find the code to unlock it?</p>
 
     <!-- step 1 -->
-    <div class="step">
+    <s-card>
         <h2>Step 1: Investigate the page</h2>
         <p>Right-click anywhere on this page and choose <strong>"Inspect"</strong>, or press <strong>F12</strong> to
             open Developer Tools. Use the <strong>Elements</strong> tab to investigate the code.</p>
-    </div>
+    </s-card>
 
     <!-- step 2 -->
-    <div class="step">
+    <s-card>
         <h2>Step 2: Look for clues</h2>
         <p>The code to unlock the locker is hidden within the HTML. Explore the page elements carefully. It might not be
             easy to spot, but if you look closely, you'll find parts of the code scattered around.</p>
-    </div>
+    </s-card>
 
     <!-- step 3 -->
-    <div class="step">
+    <s-card>
         <h2>Step 3: Input the secret code</h2>
-        <p>Once you’ve found the code, enter it below to unlock the locker:</p>
+        <p>Once you've found the code, enter it below to unlock the locker:</p>
         <div class="input-section">
-            <input type="text" id="flagInput" placeholder="Enter the code">
-            <button onclick="checkFlag()">Submit</button>
+            <s-text-field id="flagInput" label="Enter the code" style="margin: auto;"></s-text-field>
+            <s-button onclick="checkFlag()">Submit</s-button>
         </div>
-    </div>
+    </s-card>
     <p class="ITSHALLNEVERBEFOUND">The code is hidden in secret locations around the page. Keep searching!</p>
 
     <img src="assets/images/1.jpg" alt="" class="ITSHALLNEVERBEFOUND">
@@ -46,6 +46,7 @@
         <p>Good luck! Can you unlock the locker and find the hidden message?</p>
     </footer>
 
+    <script src="https://unpkg.com/sober@0.6.7/dist/sober.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
 </body>
 
