@@ -31,6 +31,4 @@ const checkTrue = async () => {
     }
 };
 
-console.log(flag);
-
 // look into the images closely, there may be something hidden in them :)
