@@ -1,25 +1,62 @@
+s-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin: -20px;
+    padding: 20px;
+    margin-bottom: -40px;
+}
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-    background-color: #f0f8ff;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-.locker {
-    font-size: 100px;
-    margin: 30px 0;
+h1, .locker, p:not(.step p) {
+    text-align: center;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+s-card {
+    display: block;
+    aspect-ratio: 1 / 1;
+    min-height: 370px;
+    min-width: 375px;
 }
 
 .step {
-    margin: 20px 0;
+    margin: 0;
     padding: 20px;
-    border: 2px solid #000;
     border-radius: 10px;
-    background-color: #e6e6fa;
+    height: 100%;
+    text-align: left;
+    line-height: 1.4;
+    overflow-y: auto;
 }
 
 .input-section {
     margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+s-text-field {
+    width: 100%;
+    max-width: 300px;
 }
 
 input[type="text"] {
@@ -28,13 +65,53 @@ input[type="text"] {
     width: 300px;
 }
 
-button {
+s-button {
     padding: 10px 20px;
     font-size: 18px;
-    margin-left: 10px;
     cursor: pointer;
+    width: fit-content;
 }
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    s-text-field {
+        max-width: 100%;
+    }
+    
+    s-button {
+        width: 100%;
+    }
+}
+
+.locker {
+    font-size: 48px;
+    margin: 20px 0;
+}
+
+h1 {
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.5;
+    margin: 15px 0;
 }
