@@ -4,7 +4,7 @@ function checkFlag() {
 
     if (enteredFlag === correctFlag) {
         document.querySelector('.locker').textContent = '🔓';
-        alert("Don't be happy to early. Mr.C's secret is always safe!");
+        alert("Don't be happy to early. Mr.C realize it and transfor the secret already!");
         // Redirect to the harder game
         window.location.href = 'locker2.html';
     } else {

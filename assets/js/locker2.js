@@ -13,7 +13,7 @@ const correctFlagHash = 'b1fc7cae5c24f2625866f490e53b17f4e4ddb30c33d6422ff650dce
 async function checkFlag() {
     const enteredFlag = document.getElementById('flagInput').value;
     const hashedEnteredFlag = await hashFlag(enteredFlag);
-    const successMessage = "Q29uZ3JhdHVsYXRpb25zISBZb3UndmUgdW5sb2NrZWQgdGhlIGxvY2tlci4gTXIuQyBpcyB2ZXJ5IGN1bm5pbmcsIGhlIGhhcyBhbHJlYWR5IHRyYW5zZmVycmVkIHRoZSBzZWNyZXQgYmVmb3JlIHlvdXIgYXJyaXZhbA==";
+    const successMessage = "TXIuQyBpcyBzbWFydCBidXQgbm90IHRoYXQgc21hcnQsIHdlIGZvdW5kIGEgVVJMIGxlYWQgdG8gYSBjbG91ZCBzdG9yYWdlLiBJIGd1ZXNzIGhlIHB1dHRlZCBzb21lIGZpbGVzIHRoZXJl";
 
     if (hashedEnteredFlag === correctFlagHash) {
         document.querySelector('.locker').textContent = '🔓';
