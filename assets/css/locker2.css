@@ -7,6 +7,10 @@ s-page {
     padding: 20px;
     margin-bottom: -40px;
 }
+
+/* Hidden encoded message in CSS comment */
+        /* LyogUGFydDE6IEZMQUd7SV9BTV9fICov */
+
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
