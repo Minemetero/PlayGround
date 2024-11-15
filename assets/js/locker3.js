@@ -21,7 +21,7 @@ const checkTrue = async () => {
         
         if (inputHash === flag) {
             alert("Password is correct");
-            window.location.href = 'https://tinyurl.com/3sykfcnt';
+            window.location.href = 'https://burdenowl.github.io/PlayGround2/';
         } else {
             alert("Password is incorrect");
         }
